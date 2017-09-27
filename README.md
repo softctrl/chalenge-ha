@@ -1,8 +1,29 @@
 # chalenge-ha
 Just a chalenge
 
+```
+Usage of ./Chalenge: 
+  -csv string                                         
+        Inform a valid csv file to be processed. (default "./geoData.csv")
+  -ds int
+        Configure the source of the data. you can inform 0 for csv or 1 for PostgreSQL (under development)
+  -lg float
+        Inform the reference longitude to measure the distance. (default 4.478617)
+  -lt float
+        Inform the reference latitude to measure the distance. (default 51.925146)
+  -n int
+        Inform the max relevant elements you want. (default 5)
+```
 
-# Limulating a large Dataset (i test with 50M of records!!)
+Here you can see the times that i achieve with this program:
+
+![Proccess geoData.csv](https://github.com/softctrl/chalenge-ha/blob/master/time00.png "Proccess geoData.csv")
+
+![Proccess 1M.csv](https://github.com/softctrl/chalenge-ha/blob/master/time01.png "Proccess 1M.csv")
+
+![Proccess 50M.csv](https://github.com/softctrl/chalenge-ha/blob/master/time02.png "Proccess 50M.csv")
+
+# Simulating a large Dataset (how i test with 50M of records!!)
 
 Just download the [scgen.py](https://raw.githubusercontent.com/softctrl/chalenge-ha/master/scgen.py) file and execute:
 
@@ -10,4 +31,4 @@ Just download the [scgen.py](https://raw.githubusercontent.com/softctrl/chalenge
 python3.6 scgen.py > geo_data_set.csv
 ```
 
-So, here i am using Python 3.6.
+You can change the MAX variable on this program to a value that you need to create a test csv file with location values. Also i am using Python 3.6.
