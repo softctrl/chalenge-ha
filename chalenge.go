@@ -79,8 +79,6 @@ func (__obj *List) _C_OrdInsert(loc *Location) {
 		}
 
 	}
-	//	fmt.Println("_C_OrdInsert - Done..")
-	//	__obj.Done()
 
 }
 
@@ -95,8 +93,6 @@ func (__obj *List) _F_OrdInsert(loc *Location) {
 		}
 
 	}
-	//	fmt.Println("_F_OrdInsert - Done..")
-	//	__obj.Done()
 
 }
 
@@ -129,8 +125,6 @@ func (__obj *List) Insert(loc *Location) *List {
 
 	} else {
 
-		//		__obj.Add(1)
-		/*go */
 		__obj._C_OrdInsert(loc) // Try to make an ordered insert.
 
 	}
@@ -142,8 +136,6 @@ func (__obj *List) Insert(loc *Location) *List {
 
 	} else {
 
-		//		__obj.Add(1)
-		/*go */
 		__obj._F_OrdInsert(loc) // Try to make an ordered insert.
 
 	}
