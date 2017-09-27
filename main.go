@@ -18,14 +18,13 @@
 package main
 
 import (
-	//	"encoding/csv"
 	"fmt"
 )
 
 // Parameters that users can inform to change my behaviour.
 var config *Configuration
 
-// Hwo there rementer the static block on Java :D
+// it reminds me of the static block on Java :D
 func init() {
 
 	config = ParseConfiguration()
