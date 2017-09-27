@@ -17,11 +17,17 @@ Usage of ./Chalenge:
 
 Here you can see the times that i achieve with this program:
 
-![Proccess geoData.csv](https://github.com/softctrl/chalenge-ha/blob/master/time00.png "Proccess geoData.csv")
+<p align="center">
+  <img src="https://github.com/softctrl/chalenge-ha/blob/master/time00.png?raw=true" alt="Proccess geoData.csv"/>
+</p>
 
-![Proccess 1M.csv](https://github.com/softctrl/chalenge-ha/blob/master/time01.png "Proccess 1M.csv")
+<p align="center">
+  <img src="https://github.com/softctrl/chalenge-ha/blob/master/time01.png?raw=true" alt="Proccess 1M.csv"/>
+</p>
 
-![Proccess 50M.csv](https://github.com/softctrl/chalenge-ha/blob/master/time02.png "Proccess 50M.csv")
+<p align="center">
+  <img src="https://github.com/softctrl/chalenge-ha/blob/master/time02.png?raw=true" alt="Proccess 50M.csv"/>
+</p>
 
 # Simulating a large Dataset (how i test with 50M of records!!)
 
