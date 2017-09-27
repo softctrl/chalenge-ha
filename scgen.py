@@ -28,10 +28,10 @@ SOFTWARE.
 if __name__ == '__main__':
     MAX = 50000000  # Change for whatever you like
     GROW_RATE = 0.1   # Grow rate
-    LATITUDE = 51.925146 + VALUE
-    LONGITUDE = 4.478617 + VALUE
+    LATITUDE = 51.925146 + GROW_RATE
+    LONGITUDE = 4.478617 + GROW_RATE
     print('"id","lat","lng"')
     for id in range(0, MAX):
         print("%d,%f,%f" % (id + 1, LATITUDE, LONGITUDE))
-        LATITUDE = LATITUDE + VALUE
-        LONGITUDE = LONGITUDE + VALUE
+        LATITUDE = LATITUDE + GROW_RATE
+        LONGITUDE = LONGITUDE + GROW_RATE
