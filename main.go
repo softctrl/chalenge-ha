@@ -51,6 +51,13 @@ func main() {
 
 	}
 
+	if *config.nth < 1 {
+
+		fmt.Println("If you did not want to know anything why did you run me? Please inform a valid n parameter.")
+		return
+
+	}
+
 	// Start to read all Data:
 	if loc, err := ds.Next(); err == nil {
 
