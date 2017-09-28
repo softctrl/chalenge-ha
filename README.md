@@ -31,7 +31,7 @@ Here you can see the times that i achieve with this program:
 
 # Simulating a large Dataset (how i test with 50M of records!!)
 
-Just download the [scgen.py](https://raw.githubusercontent.com/softctrl/chalenge-ha/master/scgen.py) file and execute:
+Just download the [scgen.py](https://github.com/softctrl/chalenge-ha/blob/master/scgen.py) file and execute:
 
 ```
 python3.6 scgen.py > geo_data_set.csv
