@@ -61,7 +61,7 @@ func (__obj *List) C_Front() *Location {
 
 }
 
-// C_Front return the Front value of the furthest list.
+// F_Front return the Front value of the furthest list.
 func (__obj *List) F_Front() *Location {
 
 	return __obj.furthestList.Front().Value.(*Location)
@@ -96,14 +96,14 @@ func (__obj *List) _F_OrdInsert(loc *Location) {
 
 }
 
-// _CRemoveLast remove lest element.
+// _CRemoveLast remove last element.
 func (__obj *List) _CRemoveLast() {
 
 	__obj.closestList.Remove(__obj.closestList.Back()) // Remove the last one.
 
 }
 
-// _FRemoveLast remove lest element.
+// _FRemoveLast remove last element.
 func (__obj *List) _FRemoveLast() {
 
 	__obj.furthestList.Remove(__obj.furthestList.Back()) // Remove the last one.
@@ -112,10 +112,10 @@ func (__obj *List) _FRemoveLast() {
 
 // Here the magics happens :)
 // Insert insert a new value into a priority queue. Also at the same time i
-// am limiting the maximun size to the 5th elements, and also i am doing an
-// online sort, so i do not need to get all data from memory and y only need
-// to go through the data only once, and the sort will only take 5 elements
-// at time
+// am limiting the maximun size to the nth elements, and also i am doing an
+// online sort, so i do not need to get all data from memory and i only need
+// to go through the data only once, and the sort will only take n elements
+// at time.
 func (__obj *List) Insert(loc *Location) *List {
 
 	// Closest elements (OK)
@@ -125,7 +125,7 @@ func (__obj *List) Insert(loc *Location) *List {
 
 	} else {
 
-		__obj._C_OrdInsert(loc) // Try to make an ordered insert.
+		__obj._C_OrdInsert(loc) // Try to make an ordered insert(priority queue).
 
 	}
 
@@ -136,7 +136,7 @@ func (__obj *List) Insert(loc *Location) *List {
 
 	} else {
 
-		__obj._F_OrdInsert(loc) // Try to make an ordered insert.
+		__obj._F_OrdInsert(loc) // Try to make an ordered insert(priority queue).
 
 	}
 
